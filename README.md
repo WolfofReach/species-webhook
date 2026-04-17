@@ -63,16 +63,16 @@ Game Server (Path of Titans)
 
 This is the service your game server will send events to.
 
-1. Click **+ Add a Service** → **GitHub Repo** → select `species-webhook`
-2. Click **Deploy** and wait for the green checkmark
+1. Click **+ Add** → **GitHub Repo** → select `species-webhook`
 
 **Connect it to your database:**
 1. Click the webhook service → **Variables** tab
 2. Click **+ Add Variable Reference**
 3. Select your Postgres service → select `DATABASE_URL`
+4. Deploy
 
 **Get your webhook URL:**
-1. Click the webhook service → **Settings** → **Networking** → **Generate Domain**
+1. Click the species-webhook deployment box → **Settings** → **Networking** → **Generate Domain**
 2. Copy the domain — it will look like: `species-webhook-production-xxxx.up.railway.app`
 
 **Verify it's running** by opening this URL in your browser:
