@@ -52,10 +52,10 @@ Game Server (Path of Titans)
 
 ## Step 3 - Set up your database tables
 
-1. Click on your Postgres service → **Query** tab
+1. Click on your Postgres service → **Database** tab
 2. Open `schema.sql` in Notepad or any text editor
-3. Copy the entire contents and paste into the Railway query box
-4. Click **Run Query**. You should see no errors
+3. Copy the entire contents and paste into the Railway query box (Under "Data" and already has the start of a * SELECT..... query)
+4. Press enter to **Run Query**. You should see no errors
 
 ---
 
