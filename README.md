@@ -1,4 +1,4 @@
-Get species_dashboard here: https://github.com/vkberndt/species-dashboard_public
+Get species_dashboard here: https://github.com/vkberndt/species_dashboard_public
 (I forgot I already had a "species_dashboard" repo for my private version. So just follow all the same steps but with "species_dashboard_public" instead of just "species_dashboard")
 
 # Species Dashboard Deployment Guide
