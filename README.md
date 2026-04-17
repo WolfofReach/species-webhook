@@ -129,10 +129,6 @@ If you see the `✔ Saved to database` line, everything is working.
 
 ## Troubleshooting
 
-**Health check URL shows an error**
-- Check the **Logs** tab on the webhook service
-- Make sure `DATABASE_URL` was added as a variable reference in Step 4
-
 **Logs show no events after a player respawns**
 - Double-check the URL in `Game.ini` matches your Railway domain exactly
 - Make sure `bEnabled=true` is set and the game server was restarted
