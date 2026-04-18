@@ -84,7 +84,7 @@ Open your server's `Game.ini` and update the `[ServerWebhooks]` section:
 ```ini
 [ServerWebhooks]
 bEnabled=true
-PlayerRespawn="https://YOUR-DOMAIN.up.railway.app/pot/PlayerRespawn"
+PlayerRespawn="https://YOUR-DOMAIN.up.railway.app/PlayerRespawn"
 ```
 
 Save and restart your game server.
