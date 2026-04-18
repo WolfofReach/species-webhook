@@ -44,7 +44,7 @@ def log_species_event(aid: str, species: str, event_type: str = "PlayerRespawn")
         pool.putconn(conn)
 
 
-@app.route("/pot/<event_name>", methods=["POST"])
+@app.route("/<event_name>", methods=["POST"])
 def handle_event(event_name):
     data = request.get_json(silent=True, force=True) or {}
 
@@ -70,14 +70,14 @@ def handle_event(event_name):
                 print(f"  ► Species:    {dino}")
                 log_species_event(aid, dino)
             else:
-                print(f"  Could not find DinosaurType or PlayerAlderonId in payload.")
-                print(f"  Raw details parsed: {details}")
+                print(f"  ✘ Could not find DinosaurType or PlayerAlderonId in payload.")
+                print(f"  ✘ Raw details parsed: {details}")
 
         except Exception as e:
-            print(f"  Failed to parse PlayerRespawn payload: {e}")
-            print(f"  Raw data received: {json.dumps(data)}")
+            print(f"  ✘ Failed to parse PlayerRespawn payload: {e}")
+            print(f"  ✘ Raw data received: {json.dumps(data)}")
     else:
-        print(f"  No action configured for '{event_name}' — event acknowledged.")
+        print(f"  ► No action configured for '{event_name}' — event acknowledged.")
 
     print("-" * 50)
     return jsonify({"status": "ok", "event": event_name}), 200
