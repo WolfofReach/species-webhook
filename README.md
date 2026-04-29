@@ -73,7 +73,8 @@ This is the service your game server will send events to.
 
 **Get your webhook URL:**
 1. Click the species-webhook deployment box → **Settings** → **Networking** → **Generate Domain**
-2. Copy the domain — it will look like: `species-webhook-production-xxxx.up.railway.app`
+2. Change it to a UNIQUE DOMAIN NAME
+3. Copy the domain — it will look like: `species-webhook-production-xxxx.up.railway.app`
 
 ---
 
